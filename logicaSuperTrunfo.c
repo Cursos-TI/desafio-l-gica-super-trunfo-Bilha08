@@ -96,11 +96,11 @@ int main() {
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
     // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+     //if (populacao > populacao2) {
+         //printf("A cidade 1 tem maior população.\n");
+     //} else {
+         //printf("A cidade 2 tem maior população.\n");
+     //}
 
     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
@@ -108,6 +108,18 @@ int main() {
 
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+
+    printf("\nComparação de cartas \n");
+    printf("Carta 1 - Estado:%c, Código:%s, Densidade populacional: %.2f pessoas por km² \n", estado, codigoCard, densidadePopulacional);
+    printf("Carta 2 - Estado:%c, Código:%s, Densidade populacional: %.2f pessoas por km² \n", estado2, codigoCard2, densidadePopulacional2);
+     
+     if (densidadePopulacional < densidadePopulacional2) {
+         printf("Resultado: Carta 1 é a vencedora!.\n");
+     } else {
+         printf("Resultado: Carta 2 é a vencedora!.\n");
+     }
+
+
 
     return 0;
 }
