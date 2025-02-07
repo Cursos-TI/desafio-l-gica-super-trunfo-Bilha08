@@ -2,27 +2,21 @@
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
     printf("**Super Trunfo** \n");
     // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
     char estado, estado2;
     char codigoCard [50], codigoCard2 [50];
     char nomeCidade [50], nomeCidade2 [50];
     unsigned long int populacao, populacao2;
     float area, area2;
-    double pib, pib2;
+    float pib, pib2;
     int pontosTuristicos, pontosTuristicos2;
     float densidadePopulacional, densidadePopulacional2;
     float pib_per_capita, pib_per_capita2;
     
     // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+
     // Cadastro da primeira carta:
     printf("\nPRIMEIRA CARTA\n");
     printf("\nInsira o estado: \n");
@@ -71,43 +65,72 @@ int main() {
     printf("Insira o Numero de Pontos Turísticos: \n");
     scanf("%d", &pontosTuristicos2);
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
 
-    //Calculos de densidada populacional e Pib per capita da primeira carta.
+    //Calculos de densidada populacional e Pib per capita da primeira carta:
     
     densidadePopulacional = populacao / area;
 
-    pib_per_capita = pib / (float) populacao;
+    pib_per_capita = pib / (float)populacao;
+
+    printf("\nDensidade populacional carta 1: %.2f pessoas por km²\n", densidadePopulacional);
+    printf("PIB per capita carta 1: %.2f Reais \n", pib_per_capita);
+
+   
 
 
-    //Calculos de densidada populacional e Pib per capita da segunda carta.
+    //Calculos de densidada populacional e Pib per capita da segunda carta:
 
     
     densidadePopulacional2 = populacao2 / area2;
 
-    pib_per_capita2 = pib2 / (float) populacao2;
+    pib_per_capita2 = pib2 / (float)populacao2;
+
+    printf("\nDensidade populacional carta 1: %.2f pessoas por km²\n", densidadePopulacional2);
+    printf("PIB per capita carta 1: %.2f Reais \n", pib_per_capita2);
+
 
     // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
-    // Exemplo:
      //if (populacao > populacao2) {
-         //printf("A cidade 1 tem maior população.\n");
+         //printf("A cidade 1 tem maior população. \n");
      //} else {
-         //printf("A cidade 2 tem maior população.\n");
+         //printf("A cidade 2 tem maior população. \n");
      //}
 
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
+     //if (area > area2) {
+         //printf("A cidade 1 tem a maior Área. \n");
+     //} else {
+         //printf("A cidade 2 tem a maior Área. \n");
+     //}
 
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+     //if (pib > pib2) {
+         //printf("A cidade 1 tem o maior PIB. \n");
+     //} else {
+         //printf("A cidade 2 tem o maior PIB. \n");
+     //}
+
+     //if (pontosTuristicos > pontosTuristicos2) {
+         //printf("A cidade 1 tem o maior número de pontos turísticos. \n");
+     //} else {
+         //printf("A cidade 2 tem o maior número de pontos turísticos. \n");
+     //}
+
+     //if (pib_per_capita > pib_per_capita2) {
+         //printf("A cidade 1 tem o maior pib_per_capita. \n");
+     //} else {
+         //printf("A cidade 2 tem o maior pib_per_capita2. \n");
+     //}
+
+     //if (densidadePopulacional < densidadePopulacional2) {
+         //printf("A cidade 1 tem a maior densidadePopulacional ! \n");
+     //} else {
+         //printf("A cidade 2 tem a maior densidadePopulacional !\n");
+    // }
+
+
+
+
+    // Exibição dos Resultados:
 
     printf("\nComparação de cartas \n");
     printf("Carta 1 - Estado:%c, Código:%s, Densidade populacional: %.2f pessoas por km² \n", estado, codigoCard, densidadePopulacional);
