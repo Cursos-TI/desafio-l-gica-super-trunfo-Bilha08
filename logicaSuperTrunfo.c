@@ -14,7 +14,7 @@ int main() {
     char nomeCidade [50], nomeCidade2 [50];
     unsigned long int populacao, populacao2;
     float area, area2;
-    float pib, pib2;
+    double pib, pib2;
     int pontosTuristicos, pontosTuristicos2;
     float densidadePopulacional, densidadePopulacional2;
     float pib_per_capita, pib_per_capita2;
@@ -76,6 +76,20 @@ int main() {
     // scanf("%s", codigo);
     // 
     // (Repita para cada propriedade)
+
+    //Calculos de densidada populacional e Pib per capita da primeira carta.
+    
+    densidadePopulacional = populacao / area;
+
+    pib_per_capita = pib / (float) populacao;
+
+
+    //Calculos de densidada populacional e Pib per capita da segunda carta.
+
+    
+    densidadePopulacional2 = populacao2 / area2;
+
+    pib_per_capita2 = pib2 / (float) populacao2;
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
